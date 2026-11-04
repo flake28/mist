@@ -32,8 +32,8 @@ enum PromptBuilder {
         return f.string(from: Date())
     }
 
-    /// Today's date is included because the model only knows its training-time date: in the Exa test it wrote
-    /// "PPF interest rate 2024" and pulled two-year-old articles.
+    /// Today's date is included because the model only knows its training-time date: asked for a current interest
+    /// rate, it added a stale year to the query and pulled two-year-old articles.
     static var queryWriter: String { """
     You write web search queries. Today is \(today). Reply with only the query: 3–8 words naming exactly what \
     the user wants to know (the concept, theorem, product, problem or topic). Don't add a year unless the user \
