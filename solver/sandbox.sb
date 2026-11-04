@@ -1,0 +1,5 @@
+(version 1)
+(allow default)
+(deny network*)
+(deny file-write*)
+(allow file-write* (subpath "/private/tmp/mist-solver") (subpath "/private/var/folders") (literal "/dev/null"))

@@ -1,0 +1,21 @@
+# Build output
+app/mist
+probes/capture-probe/mist-probe
+
+# Local logs and results (may contain what you read or ask)
+*.csv
+*.log
+*.jsonl
+errors.log
+answers.md
+answers.json
+
+# Python
+solver/.venv/
+__pycache__/
+
+# Personal documents used for testing
+*.pdf
+
+# macOS
+.DS_Store
